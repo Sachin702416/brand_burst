@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import videoBg from '../assets/videobg.mp4'; // ✅ Replace with your actual video path
 
 const VideoSection = () => {
   return (
@@ -23,7 +22,7 @@ const VideoSection = () => {
           objectFit: 'cover',
         }}
       >
-        <source src={videoBg} type="video/mp4" />
+        <source src="/videoBg.mp4" type="video/mp4" /> {/* Use public path */}
         Your browser does not support the video tag.
       </video>
     </Box>
