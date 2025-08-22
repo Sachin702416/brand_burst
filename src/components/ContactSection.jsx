@@ -97,6 +97,7 @@ const ContactSection = () => {
                     ),
                   }}
                   sx={{
+                    width: '1000px',
                     
                     input: {
                       backgroundColor: 'rgba(255,255,255,0.07)',
@@ -131,7 +132,7 @@ const ContactSection = () => {
                 rows={4}
                 margin="normal"
                 sx={{
-                  
+                  width: '1000px',
                   textarea: {
                     backgroundColor: 'rgba(255,255,255,0.07)',
                     color: '#fff',
@@ -162,6 +163,7 @@ const ContactSection = () => {
                   mt: 2,
                   backgroundColor: '#a08b4d',
                   color: '#000',
+                  ml: 100,
                   fontWeight: 600,
                   borderRadius: '10px',
                   px: 4,
@@ -182,7 +184,7 @@ const ContactSection = () => {
           
 
           {/* Right - Contact Info & Map */}
-          <Grid item xs={12} md={6} sx={{ml: -3, mt: -8}}>
+          <Grid item xs={12} md={6} sx={{ml: 130, mt: -69}}>
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}

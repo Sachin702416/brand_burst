@@ -94,11 +94,11 @@ const SocialMedia = () => {
   ];
 
   const platforms = [
-    { name: 'Facebook', icon: <Facebook />, color: '#1877F2' },
-    { name: 'Instagram', icon: <Instagram />, color: '#E4405F' },
-    { name: 'Twitter', icon: <Twitter />, color: '#1DA1F2' },
-    { name: 'LinkedIn', icon: <LinkedIn />, color: '#0A66C2' },
-    { name: 'YouTube', icon: <YouTube />, color: '#FF0000' }
+    { name: 'Facebook', icon: <Facebook />, color: '#1877F2', link: 'https://www.facebook.com/thebrandburst/'  },
+    { name: 'Instagram', icon: <Instagram />, color: '#E4405F',link: 'https://www.instagram.com/the.brandburst/'  },
+    { name: 'Twitter', icon: <Twitter />, color: '#1DA1F2', link: 'https://x.com/thebrandburst'  },
+    { name: 'LinkedIn', icon: <LinkedIn />, color: '#0A66C2', link: 'https://www.linkedin.com/in/the-brandburst-ltd-166b0b377/'  },
+    { name: 'YouTube', icon: <YouTube />, color: '#FF0000',link: 'https://www.instagram.com/the.brandburst/'  }
   ];
 
   return (
@@ -315,18 +315,30 @@ const SocialMedia = () => {
                       whileHover={{ scale: 1.2, y: -5 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <Avatar
-                        sx={{
-                          width: 60,
-                          height: 60,
-                          background: `linear-gradient(135deg, ${platform.color} 0%, ${platform.color}dd 100%)`,
-                          border: '2px solid rgba(255,255,255,0.1)',
-                          boxShadow: '0 8px 24px rgba(0,0,0,0.3)',
-                          cursor: 'pointer'
-                        }}
-                      >
-                        {platform.icon}
-                      </Avatar>
+                     <a
+  href={platform.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: 'none' }}
+>
+  <Avatar
+    sx={{
+      width: 60,
+      height: 60,
+      background: `linear-gradient(135deg, ${platform.color} 0%, ${platform.color}dd 100%)`,
+      border: '2px solid rgba(255,255,255,0.1)',
+      boxShadow: '0 8px 24px rgba(0,0,0,0.3)',
+      cursor: 'pointer',
+      transition: 'transform 0.3s ease',
+      '&:hover': {
+        transform: 'scale(1.2)'
+      }
+    }}
+  >
+    {platform.icon}
+  </Avatar>
+</a>
+
                     </motion.div>
                   ))}
                 </Box>

@@ -138,7 +138,7 @@ const CRM = () => {
           <motion.div variants={fadeIn} initial="hidden" animate="visible" custom={1}>
   <Box
     sx={{
-      backgroundImage: 'url(/src/assets/crmbg.webp)', // Replace with your actual image path
+      backgroundImage: 'url(/crmbg.webp)', // Replace with your actual image path
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',

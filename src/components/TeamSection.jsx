@@ -68,7 +68,7 @@ const TeamSection = () => {
                     style={{ maxWidth: '800px' }}
                 >
                     <Avatar
-                        src="/src/assets/vini.png"
+                        src="/vini.png"
                         alt="Vini Patidar"
                         sx={{ width: 180, height: 180, mx: 'auto', mb: 3, border: '3px solid #a08b4d', boxShadow: '0 0 20px rgba(160,139,77,0.5)' }}
                     />
